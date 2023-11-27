@@ -1,0 +1,15 @@
+{
+  "name": "basic-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "theme", "basic", "learning", "css"
+  ],
+  "author": "Hilal Al Harthi",
+  "license": "MIT",
+  "homepage": ""
+}

@@ -1,0 +1,107 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button .btn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 24px;
+  border: none;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+  color: #fff;
+}
+
+.theme-toggle-switch-container {
+  display: inline-flex;
+  width: 60px;
+  cursor: pointer;
+}
+.theme-toggle-switch-container input {
+  display: none;
+}
+.theme-toggle-switch-container input:checked + .toggle-switch:before {
+  transform: translate(100%);
+}
+.theme-toggle-switch-container input:checked + .toggle-switch {
+  background: linear-gradient(0deg, rgb(113, 228, 255) 0%, rgb(83, 167, 186) 100%);
+}
+.theme-toggle-switch-container .toggle-switch {
+  background: rgb(179, 179, 179);
+  background: linear-gradient(0deg, rgb(176, 176, 176) 0%, rgb(144, 144, 144) 100%);
+  width: 100%;
+  height: 30px;
+  display: flex;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.theme-toggle-switch-container .toggle-switch:before {
+  transition: all 0.1s ease-in-out;
+  content: "";
+  width: 50%;
+  background-color: #FFF;
+}
+.theme-toggle-switch-container .toggle-switch.radius {
+  border-radius: 50px;
+}
+.theme-toggle-switch-container .toggle-switch.radius:before {
+  border-radius: inherit;
+}
+
+/*# sourceMappingURL=app.css.map */
