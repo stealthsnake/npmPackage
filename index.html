@@ -1,19 +1,211 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="app.css">
-</head>
-<body>
-  <label class="theme-toggle-switch-container">
-    <input type="checkbox">
-    <span class="toggle-switch"></span>
-  </label>
+  <style>
+    body {
+      margin: 0;
+      padding: 15px;
+    }
+    h2 {
+      font-size: 1.5rem;
+      padding: 20px 0px 10px 0px;
+    }
 
-  <label class="theme-toggle-switch-container">
-    <input type="checkbox">
-    <span class="toggle-switch radius"></span>
-  </label>
+    h3 {
+      font-size: 1.2rem;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #000;
+      color: #ff0083;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+    }
+
+    .container+.container {
+      margin-top: 15px;
+    }
+
+    .item-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+
+<body>
+
+  <h2>Css Button</h2>
+
+  <div>
+    <button class="btn">button</button>
+  </div>
+
+
+  <h2>Css toggle checkbox</h2>
+  <div class="container">
+    <div class="item-container">
+      <h3> Normal toggle - text on left</h3>
+      <h4>Code:</h4>
+      <p>by default the text is on the left of the toggle. check the code below to see </p>
+      <pre><code class="language-html">
+        <label class="theme-toggle-switch-container">
+          <input type="checkbox">
+          <span class="toggle-text">Allow Notification</span>
+          <span class="toggle-switch"></span>
+        </label>
+      </code></pre>
+      <h4>Example</h4>
+      <label class="theme-toggle-switch-container">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch"></span>
+      </label>
+      <label class="theme-toggle-switch-container">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch"></span>
+      </label>
+      <label class="theme-toggle-switch-container">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch"></span>
+      </label>
+      <label class="theme-toggle-switch-container">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch"></span>
+      </label>
+    </div>
+    <div class="item-container">
+      <h3> Normal toggle - text on right</h3>
+      <p>To make the text on the right of the toggle to add css class "right-text" to the theme-toggle-switch-container
+      </p>
+      <h4>Code:</h4>
+      <pre><code class="language-html">
+        <label class="theme-toggle-switch-container right-text">
+          <input type="checkbox">
+          <span class="toggle-text">Allow Notification</span>
+          <span class="toggle-switch"></span>
+        </label>
+      </code></pre>
+      <h4>Example</h4>
+      <label class="theme-toggle-switch-container right-text">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch"></span>
+      </label>
+      <label class="theme-toggle-switch-container right-text">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch"></span>
+      </label>
+      <label class="theme-toggle-switch-container right-text">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch"></span>
+      </label>
+      <label class="theme-toggle-switch-container right-text">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch"></span>
+      </label>
+    </div>
+  </div>
+  <div class="container">
+    <div class="item-container">
+      <h3>Round toggle</h3>
+      <p>by default the toggle do have round edged corners, to make them round add class "round" to "toggle-switch" </p>
+      <h4>Code:</h4>
+      <pre><code class="language-html">
+        <label class="theme-toggle-switch-container">
+          <input type="checkbox">
+          <span class="toggle-text">Allow Notification</span>
+          <span class="toggle-switch radius"></span>
+        </label>
+      </code></pre>
+      <h4>Example</h4>
+      <label class="theme-toggle-switch-container">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch radius"></span>
+      </label>
+      <label class="theme-toggle-switch-container">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch radius"></span>
+      </label>
+      <label class="theme-toggle-switch-container">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch radius"></span>
+      </label>
+      <label class="theme-toggle-switch-container">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch radius"></span>
+      </label>
+    </div>
+    <div class="item-container">
+      <h3>Round toggle - text on the right</h3>
+      <p>To make the text on the right of the toggle to add css class "right-text" to the theme-toggle-switch-container
+      </p>
+      <h4>Code:</h4>
+      <pre><code>
+        <label class="theme-toggle-switch-container right-text">
+          <input type="checkbox">
+          <span class="toggle-text">Allow Notification</span>
+          <span class="toggle-switch radius"></span>
+        </label>
+      </code></pre>
+      <h4>Example</h4>
+      <label class="theme-toggle-switch-container right-text">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch radius"></span>
+      </label>
+      <label class="theme-toggle-switch-container right-text">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch radius"></span>
+      </label>
+      <label class="theme-toggle-switch-container right-text">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch radius"></span>
+      </label>
+      <label class="theme-toggle-switch-container right-text">
+        <input type="checkbox">
+        <span class="toggle-text">Allow Notification</span>
+        <span class="toggle-switch radius"></span>
+      </label>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll('pre code').forEach((el) => {
+        let code = hljs.highlight(el.innerHTML, { language: 'xml' }).value;
+        el.innerHTML = code;
+      });
+    });
+  </script>
 </body>
+
 </html>

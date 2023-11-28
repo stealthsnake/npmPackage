@@ -1,15 +1,19 @@
 {
   "name": "basic-theme",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": " learning how to create npm package",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "theme", "basic", "learning", "css"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stealthsnake/npmPackage.git"
+  },
   "author": "Hilal Al Harthi",
   "license": "MIT",
-  "homepage": ""
+  "bugs": {
+    "url": "https://github.com/stealthsnake/npmPackage/issues"
+  },
+  "homepage": "https://github.com/stealthsnake/npmPackage#readme"
 }
