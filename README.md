@@ -26,7 +26,7 @@ You would need to to use the below html structure tags to get the correct render
 ```
 
 #### Output would be
-![togglec](images/togglec.png)
+![togglec](https://github.com/stealthsnake/npmPackage/blob/master/images/round_left.png?raw=true)
 
 ###  Text on right
 To make the text on the right of the toggle to add css class "right-text" to the theme-toggle-switch-container
@@ -41,7 +41,7 @@ To make the text on the right of the toggle to add css class "right-text" to the
 ```
 
 ####  Output would be
-![toggle right](images/toggle_right.png)
+![toggle right](https://github.com/stealthsnake/npmPackage/blob/master/images/toggle_right.png?raw=true)
 ### Round toggle
 
 by default the toggle do have round edged corners, to make them round add class "round" to "toggle-switch"
@@ -57,7 +57,7 @@ by default the toggle do have round edged corners, to make them round add class 
 ```
 
 ####  Output would be
-![round right](images/round_right.png)
+![round right](https://github.com/stealthsnake/npmPackage/blob/master/images/round_right.png?raw=true)
 ### Round toggle - text on the right
 
 To make the text on the right of the toggle to add css class "right-text" to the theme-toggle-switch-container
@@ -73,4 +73,4 @@ To make the text on the right of the toggle to add css class "right-text" to the
 ```
 
 ####  Output would be
-![round left](images/round_left.png)
+![round left](https://github.com/stealthsnake/npmPackage/blob/master/images/round_left.png?raw=true)
